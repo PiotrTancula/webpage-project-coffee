@@ -1,0 +1,12 @@
+// _variables.scss variables with colors , font names , sizes etc.
+// _layout.scss .container storage
+// _typography.scss universal styles for headers etc.
+// global.scss all other rules
+
+@import 'variables';
+@import 'global';
+@import 'pagecontactus';
+@import 'pagehome';
+@import 'pageproduct';
+@import 'typography';
+@import 'layout';

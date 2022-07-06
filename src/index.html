@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+<body>
+    <div class="menu">
+      <div class="header_logo">
+        <h3>EL TIGRE</h3>
+        <h4>VENEZUEALN COFFEE BEANS</h4>
+      </div>
+      <nav class="header_menu">
+        <a href="#home" id="home">HOME</a>
+        <a href="#products" id="products" class="red blue">PRODUCTS</a>
+        <a href="#contactus" id="contactus">CONTACT US </a>
+        <!-- <ul class="home">HOME</ul>
+        <ul class="products">PRODUCTS</ul>
+        <ul class="contactus">CONTACT US</ul> -->
+      </nav>
+    </div>
+
+    <section class="home page">
+        <div class="splashscreen">
+          <div class="container">
+            <div class="container flexbox one">
+              <h1>HOME OF</h1>
+            </div>
+            <div class="emptyspace"></div>
+            <div class="container flexbox two">
+              <h1>ORIGINAL TASTES</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="bordertop"></div>
+            <div class="discover">
+              <span>DISCOVER</span>
+              <div class="discoverimg">
+                <i class="fa-solid fa-arrow-down fa-xs"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aboutusscreen">
+          <div class="opacity">
+            <div class="container">
+              <div class="textbox">
+                <span class="title">ABOUT US</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="container">
+              <div>Who are we ? Just a bunch of friends with <br>
+                a love for a good coffee and desire to create<br>
+                something new, something original.
+              </div>
+              <div>Our coffee reflects us - young, wild and free<br>
+                We are on the journey of new tastes ...
+              </div>
+            </div>
+            <div class="joincontainer">
+              <div class="join">Join us !</div>
+            </div>
+          </div>
+          </div>
+        <footer>
+          <p>© 2022</p>
+        </footer>
+     </section>
+
+     <section class="products page">
+
+     </section>
+
+     <section class="contactus page">
+      <div class="container">
+        <h1 class="container-title">CONTACT US</h1>
+            <form class="contactform">
+                <input type="text" id="fname" name="name" placeholder="Your name and surname">
+                <input type="email" id="email" name="email" placeholder="Your email">
+                <input type="text" id="text" name="subject" placeholder="Subject">
+                <textarea class="contact-input" id="subject" name="subject" placeholder="Type your message here"></textarea>
+                <button type="submit" value="Submit" class="submitbutton">Send message</button>
+            </form>
+       </div>
+     </section>
+
+
+
+     <script id="product-template" type="text/x-handlebars-template">
+
+      <div class="container">
+        <div class="textbox">
+          <span class="title">PRODUCTS</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="productcontainer">
+
+        <div class="splitcontainer">
+          <div class="textcontainer" >
+            <div class="id"> {{ id1 }} . {{ title1 }}</div>
+            <div class="linetextbox">
+              <div class="box"></div>
+              <div class="boxtext">
+                {{ desc1 }}
+              </div>
+            </div>
+            <div class="detailsbox" id="bestproduct">
+              <div class="rankcontainer">
+                <div class="rank">ROASTING:
+                  <span class="numbers"> {{ roasting1 }}</span>
+                </div>
+                <div class="rank">INTENSITY:
+                  <span class="numbers"> {{ intensity1 }}</span>
+                </div>
+              </div>
+              <div class="bestcontainer">
+                <div class="bestcoffee"></div>
+              </div>
+            </div>
+          </div>
+          <div class="photocontainer">
+            <img src="./images/{{image1}}" alt="img1">
+          </div>
+        </div>
+
+        <div class="splitcontainer">
+
+          <div class="photocontainer">
+            <img src="./images/{{image2}}" alt="img2">
+          </div>
+          <div class="textcontainer">
+            <div class="id"> {{ id2 }} . {{ title2 }}</div>
+            <div class="linetextbox">
+              <div class="box"></div>
+              <div class="boxtext">
+                {{ desc2 }}
+              </div>
+            </div>
+            <div class="detailsbox">
+              <div class="rank">ROASTING:
+                <span class="numbers"> {{ roasting2 }}</span>
+              </div>
+              <div class="rank">INTENSITY:
+                <span class="numbers"> {{ intensity2 }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="splitcontainer">
+          <div class="textcontainer" id="righttextcontainer">
+            <div class="id"> {{ id3 }} . {{ title3 }}</div>
+            <div class="linetextbox">
+              <div class="box"></div>
+              <div class="boxtext">
+                {{ desc3 }}
+              </div>
+            </div>
+            <div class="detailsbox">
+              <div class="rank">ROASTING:
+                <span class="numbers"> {{ roasting3 }}</span>
+              </div>
+              <div class="rank">INTENSITY:
+                <span class="numbers"> {{ intensity3 }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="photocontainer">
+            <img src="./images/{{image3}}" alt="img3">
+          </div>
+        </div>
+      </div>
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+     <script src="js/app.js" type="module"></script>
+</body>
+</html>
