@@ -46,7 +46,7 @@ const app = {
 
     const thisApp = this;
     thisApp.data = {};
-    const url = settings.db.url + '/' + settings.db.products;
+    const url = settings.db.url  + settings.db.products;
     console.log(url);
 
     fetch(url)
