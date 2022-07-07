@@ -12,7 +12,8 @@ export const classNames = {
 
 export const settings = {
   db: {
-    url: '//localhost:3131',
+    // url: '//localhost:3131',
+    url : 'https://project-coffee-webpage.herokuapp.com/',
     products: 'products',
   },
 };
